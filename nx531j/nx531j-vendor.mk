@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -30,21 +30,15 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/nubia/nx531j/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/nubia/nx531j/proprietary/bin/iop:system/bin/iop \
-    vendor/nubia/nx531j/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/nubia/nx531j/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/nubia/nx531j/proprietary/bin/loc_launcher:system/bin/loc_launcher \
     vendor/nubia/nx531j/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/nubia/nx531j/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/nubia/nx531j/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
-    vendor/nubia/nx531j/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/nubia/nx531j/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/nubia/nx531j/proprietary/bin/pm-service:system/bin/pm-service \
-    vendor/nubia/nx531j/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/nubia/nx531j/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/nubia/nx531j/proprietary/bin/radish:system/bin/radish \
-    vendor/nubia/nx531j/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/nubia/nx531j/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
-    vendor/nubia/nx531j/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/nubia/nx531j/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/nubia/nx531j/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/nubia/nx531j/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
@@ -109,6 +103,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/etc/permissions/com.quicinc.wbc.xml:system/etc/permissions/com.quicinc.wbc.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/com.quicinc.wbcservice.xml:system/etc/permissions/com.quicinc.wbcservice.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
+    vendor/nubia/nx531j/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/nubia/nx531j/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/nubia/nx531j/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
@@ -415,6 +410,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/nubia/nx531j/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
@@ -551,6 +547,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqc-opt.so:system/vendor/lib64/libqc-opt.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqdp.so:system/vendor/lib64/libqdp.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libqisl.so:system/vendor/lib64/libqisl.so \
@@ -581,40 +578,40 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
-    vendor/nubia/nx531j/proprietary/vendor/qcril.db:system/vendor/qcril.db
+    vendor/nubia/nx531j/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
     libtime_genoff \
-    QtiTelephonyService \
     TimeService \
-    datastatusnotification \
     embms \
-    fastdormancy \
-    shutdownlistener \
     CNEService \
     QtiTetherService \
     com.qualcomm.location \
     dpmserviceapp \
-    qcrilmsgtunnel \
     ims \
     imssettings \
     com.qti.dpmframework \
     com.qti.location.sdk \
     dpmapi \
-    qcnvitems \
-    qcrilhook \
-    tcmclient \
-    telephony-static-config
+    tcmclient
 PRODUCT_COPY_FILES += \
-    vendor/nubia/nx531j/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
+    vendor/nubia/nx531j/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
+    vendor/nubia/nx531j/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/nubia/nx531j/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/nubia/nx531j/proprietary/bin/radish:system/bin/radish \
+    vendor/nubia/nx531j/proprietary/bin/rmt_storage:system/bin/rmt_storage \
+    vendor/nubia/nx531j/proprietary/bin/tftp_server:system/bin/tftp_server \
     vendor/nubia/nx531j/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/nubia/nx531j/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/nubia/nx531j/proprietary/etc/qcril_db_diff.xml:system/etc/qcril_db_diff.xml \
     vendor/nubia/nx531j/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/nubia/nx531j/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    vendor/nubia/nx531j/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/nubia/nx531j/proprietary/lib/libmodemapi.so:system/lib/libmodemapi.so \
+    vendor/nubia/nx531j/proprietary/lib/libztecfg.so:system/lib/libztecfg.so \
+    vendor/nubia/nx531j/proprietary/lib64/libmodemapi.so:system/lib64/libmodemapi.so \
+    vendor/nubia/nx531j/proprietary/lib64/libztecfg.so:system/lib64/libztecfg.so \
     vendor/nubia/nx531j/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/nubia/nx531j/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/nubia/nx531j/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
@@ -663,7 +660,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libmmQSM.so:system/vendor/lib64/libmmQSM.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
@@ -676,7 +672,15 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libsdm-disp-apis.so:system/vendor/lib64/libsdm-disp-apis.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
     vendor/nubia/nx531j/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
-    vendor/nubia/nx531j/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so
+    vendor/nubia/nx531j/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
+    vendor/nubia/nx531j/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
-    libthermalclient
+    libthermalclient \
+    QtiTelephonyService \
+    datastatusnotification \
+    fastdormancy \
+    shutdownlistener \
+    qcrilmsgtunnel \
+    qcnvitems \
+    qcrilhook
