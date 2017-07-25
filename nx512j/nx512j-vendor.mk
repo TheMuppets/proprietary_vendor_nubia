@@ -74,7 +74,7 @@ vendor/nubia/nx512j/proprietary/framework/com.quicinc.cne.jar:system/framework/c
 vendor/nubia/nx512j/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
 vendor/nubia/nx512j/proprietary/framework/dpm.jar:system/framework/dpm.jar \
 vendor/nubia/nx512j/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
-vendor/nubia/nx512j/proprietary/lib/hw/camera.vendor.msm8916.so:system/lib/hw/camera.msm8916.so \
+vendor/nubia/nx512j/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
 vendor/nubia/nx512j/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
 vendor/nubia/nx512j/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
 vendor/nubia/nx512j/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
