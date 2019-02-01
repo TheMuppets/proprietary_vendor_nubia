@@ -276,6 +276,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx512j/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
     vendor/nubia/nx512j/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/nubia/nx512j/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
+    vendor/nubia/nx512j/proprietary/vendor/lib64/libcalmodule_akm.so:system/vendor/lib64/libcalmodule_akm.so \
     vendor/nubia/nx512j/proprietary/vendor/lib64/libDivxDrm.so:system/vendor/lib64/libDivxDrm.so \
     vendor/nubia/nx512j/proprietary/vendor/lib64/libFlacSwDec.so:system/vendor/lib64/libFlacSwDec.so \
     vendor/nubia/nx512j/proprietary/vendor/lib64/libHevcSwDecoder.so:system/vendor/lib64/libHevcSwDecoder.so \
