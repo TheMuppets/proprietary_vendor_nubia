@@ -565,9 +565,9 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     qti-telephony-common \
-    manifest_android.hardware.keymaster@4.1-service-default-qti \
+    android.hardware.keymaster@4.1-service-default-qti \
     manifest_android.hardware.drm@1.3-service.widevine \
-    manifest_vendor.qti.gnss@4.0-service \
+    vendor.qti.gnss@4.0-service \
     adpl \
     adsprpcd \
     cdsprpcd \
