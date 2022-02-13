@@ -192,6 +192,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/TP1803/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/nubia/TP1803/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/nubia/TP1803/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/nubia/TP1803/proprietary/vendor/lib64/camera/com.qti.sensormodule.tp1803_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.tp1803_imx586.bin \
+    vendor/nubia/TP1803/proprietary/vendor/lib64/camera/com.qti.sensormodule.tp1803_ov8856.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.tp1803_ov8856.bin \
+    vendor/nubia/TP1803/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/nubia/TP1803/proprietary/vendor/lib64/camera/com.qti.tuned.tp1803_imx586.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.tp1803_imx586.bin \
+    vendor/nubia/TP1803/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
+    vendor/nubia/TP1803/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
+    vendor/nubia/TP1803/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
+    vendor/nubia/TP1803/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
     vendor/nubia/TP1803/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/nubia/TP1803/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
     vendor/nubia/TP1803/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
@@ -293,10 +301,6 @@ PRODUCT_PACKAGES += \
     libshoebox \
     com.qti.sensor.tp1803_imx586 \
     com.qti.sensor.tp1803_ov8856 \
-    com.qti.sensormodule.tp1803_imx586 \
-    com.qti.sensormodule.tp1803_ov8856 \
-    com.qti.tuned.default \
-    com.qti.tuned.tp1803_imx586 \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
     com.qti.eisv3 \
@@ -332,10 +336,6 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
     libdepthmapwrapper \
-    fdconfigpreview \
-    fdconfigpreviewlite \
-    fdconfigvideo \
-    fdconfigvideolite \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
