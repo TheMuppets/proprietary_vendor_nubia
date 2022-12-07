@@ -93,6 +93,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "CneApp",
+	owner: "nubia",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "PowerOffAlarm",
 	owner: "nubia",
 	apk: "proprietary/vendor/app/PowerOffAlarm/PowerOffAlarm.apk",
@@ -112,18 +123,6 @@ android_app_import {
 		enabled: false,
 	},
 	soc_specific: true,
-}
-
-android_app_import {
-	name: "CNEService",
-	owner: "nubia",
-	apk: "proprietary/product/priv-app/CNEService/CNEService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
 }
 
 android_app_import {
