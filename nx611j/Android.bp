@@ -214,13 +214,6 @@ cc_prebuilt_library_shared {
 }
 
 dex_import {
-	name: "vendor.qti.hardware.fingerprint-V1.0-java",
-	owner: "nubia",
-	jars: ["proprietary/vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar"],
-	soc_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.hardware.sensorscalibrate-V1.0-java",
 	owner: "nubia",
 	jars: ["proprietary/vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar"],
