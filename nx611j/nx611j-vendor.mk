@@ -658,7 +658,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/hw/camera.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib/hw/fingerprint.sunwave.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.sunwave.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib/hw/fingerprint.vendor.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.vendor.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/hw/gatekeeper.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/hw/keystore.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteeclientjni.so \
@@ -1049,7 +1049,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
-    vendor/nubia/nx611j/proprietary/vendor/lib64/hw/fingerprint.sunwave.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.sunwave.so \
+    vendor/nubia/nx611j/proprietary/vendor/lib64/hw/fingerprint.vendor.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.vendor.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/gatekeeper.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/hw/keystore.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.sdm660.so \
     vendor/nubia/nx611j/proprietary/vendor/lib64/libteeclientjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteeclientjni.so \
